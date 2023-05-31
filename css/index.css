@@ -202,7 +202,7 @@ nav #icon{
 
 
   .container{
-    background: rgb(37, 8, 132);
+    background: rgb(221, 218, 230);
     width: 900px;
     
   }
@@ -301,12 +301,27 @@ h4{
   }
   
   
+  #product_gallery{
+    margin-top: 180px;
+  }
+
+
+
+
+/* ...see more btn...... */
+.see-more {
+    text-align: center;
+    margin-top: 20px;
+  }
   
-
-
-
-
-
+  #see-more-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
 
 
 
