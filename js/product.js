@@ -28,7 +28,7 @@ productCards.forEach(function(card) {
 
 // Function to handle adding the item to the cart
 function addToCart(title, description, price) {
-  // Perform necessary actions, such as adding the item to the cart
+  
   console.log('Item added to cart:');
   console.log('Title: ' + title);
   console.log('Description: ' + description);

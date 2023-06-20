@@ -498,3 +498,98 @@ header {
 
 
 
+
+/* ........info........ */
+
+
+
+
+/* ......................chips info............ */
+.container_info {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    /* transform: scale(1.05); */
+  }
+  
+  
+  .image-container-info{
+    width: 400px;
+    height: 150px;
+    margin: 10px;
+  }
+  .container_info {
+    display: flex;
+  }
+  .container_info:hover{
+    color: #ad0c0c;
+  }
+  .points:hover{
+    color: #753ad5;
+  }
+  
+  .points {
+    flex: 1;
+    padding: 20px;
+    background-color: #d8caca;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+  }
+  
+  .points ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .points li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .points li::before {
+    content: "\2022";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #471717;
+    margin-right: 5px;
+    
+  }
+  
+  .image-container-info{
+    flex: 1;
+    text-align: center;
+  }
+  
+  .image-container-info img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+ /* .info_product{
+    margin-right: 20px;
+ } */
+/* ..section hover */
+
+.hover-section {
+    background-color: #f1f1f1;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hover-section:hover {
+    background-color: #c0c0c0;
+  }
+
+
+
+
+
+ /* ............cake & cookies info......... */
+
+.cake-cookie{
+    margin-top: 20px;
+}
+ 
