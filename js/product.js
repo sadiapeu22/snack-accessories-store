@@ -1,26 +1,36 @@
 // console.log("here");
-var photo = ["js-img/nuts/003-Box-Nuts.jpg", "", "images/c8.jpg", "images/c4.jpg", "images/c5.webp", "images/c6.webp", "images/c7.jpg", "images/c3.jpg", "images/c9.jpg", "images/c10.jpg", "images/c11.jpg", "images/c12.jpg", "images/c13.jpg", "images/c14.jpg"];
-var imageTag = document.querySelector("#pc");
-const my = setInterval(clickRight, 6000);
-var count = 0;
+var productCards = document.querySelectorAll('.product-card');
 
-function clickRight(){
-    count++;
-    if(count >= photo.length){
-        count = 0;
-        imageTag.src = photo[count];
-    }
-    else{
-        imageTag.src = photo[count];
-    }
-}
-function clickLeft(){
-    count--;
-    if(count < 0){
-        count = photo.length - 1;
-        imageTag.src = photo[count];
-    }
-    else{
-        imageTag.src = photo[count];
-    }  
+// each product card 
+productCards.forEach(function(card) {
+  var addToCartBtn = card.querySelector('.add-to-cart');
+
+  //..........."Add to Cart" button 
+  addToCartBtn.addEventListener('click', function() {
+    // .......Get the product details
+    var title = card.querySelector('.product-title').textContent;
+    var description = card.querySelector('.product-description').textContent;
+    var price = card.querySelector('.product-price').textContent;
+    addToCart(title, description, price);
+  });
+
+  //  ........hover effects..........
+  card.addEventListener('mouseover', function() {
+    //....hover effect styles.........
+    card.classList.add('hovered');
+  });
+
+  card.addEventListener('mouseout', function() {
+    // delete hover effect styles..........
+    card.classList.remove('hovered');
+  });
+});
+
+// Function to handle adding the item to the cart
+function addToCart(title, description, price) {
+  // Perform necessary actions, such as adding the item to the cart
+  console.log('Item added to cart:');
+  console.log('Title: ' + title);
+  console.log('Description: ' + description);
+  console.log('Price: ' + price);
 }
