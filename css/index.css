@@ -23,6 +23,7 @@ nav{
     padding: 0 0px;
     line-height: 80px;
 }
+
 nav ul{
     float: right;
     margin-right: 40px;
@@ -110,6 +111,7 @@ nav #icon{
     }
 }
 
+
 #cover{
    
     width:1550px;
@@ -148,7 +150,22 @@ nav #icon{
 
 
 
-
+h2{
+    font-size: 28px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+h2:hover{
+    color: #b30490;
+}
+h2[lang="it"]{
+    font-family: "Arial", sans-serif;
+    font-style: italic;
+}
+h3:hover{
+       color: blue;
+}
 
 .container{
     text-align: center;
@@ -220,27 +237,32 @@ nav #icon{
 
 /* ....Product ........ */
 
-
+.product_body{
+    background-color: rgb(208, 247, 213);
+}
 .products {
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 20px auto;
     padding: 0 20px;
+    background-color: #e1dade;
   }
  
   .product {
     margin-bottom: 40px;
   }
   h2{
-    font-size: 35px;
+    font-size: 45px;
     text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #f1de09;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #91051f;
   }
 
   h3{
-    color: #b3043c;
-    font-size: 23px;
+    color: #04664f;
+    font-size: 30px;
     font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
   }
   p{
     color: #b39304;
@@ -248,7 +270,13 @@ nav #icon{
   }
 
 h4{
-    font-size: 25px;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #91056c;
+}
+
+h4:hover{
+    color: #246666;
 }
   .product_gallery{
     width: 100%;
@@ -258,7 +286,10 @@ h4{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
 }
-
+.product_gallery div img{
+      width: 150px;
+      height: 150px;
+}
 
   .card{
     text-align: center;
@@ -283,6 +314,7 @@ h4{
     font-size: 20px;
     font-weight: 600;
 }
+
   /* .product img {
     width: 100%;
   } */
@@ -291,6 +323,7 @@ h4{
     width: 100%;
     font-weight: bold;
     background: #fa83a9;
+    margin-top: 20px;
   }
   .btn {
     display: inline-block;
@@ -299,13 +332,53 @@ h4{
     color: #fff;
     border-radius: 3px;
   }
+  .card {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .product-description {
+    margin-bottom: 10px;
+  }
+  .add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .product-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
   
   
   #product_gallery{
     margin-top: 180px;
   }
 
-
+  .add-to-cart-btn:hover {
+    background-color: #66a7e9;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
 
 
 /* ...see more btn...... */
@@ -410,6 +483,17 @@ header {
     font-size: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 2rem;
+}
+
+
+
+
+/* ......product 1st part....... */
+
+.featured{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
 }
 
 
